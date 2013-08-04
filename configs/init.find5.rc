@@ -324,16 +324,13 @@ service audiod /system/bin/audiod
     user system
     group audio
 
-service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
-    class core
-    oneshot
+on property:ro.baseband=mdm
+    mkdir /data/qcks 0770 system system
+    start kickstart
 
 service kickstart /system/bin/qcks -i /firmware/image/
     disabled
     oneshot
-
-on property:persist.radio.kickstart=on
-    start kickstart
 
 service netmgrd /system/bin/netmgrd
     class main

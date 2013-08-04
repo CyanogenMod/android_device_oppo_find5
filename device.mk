@@ -66,7 +66,6 @@ PRODUCT_COPY_FILES += \
 	device/oppo/find5/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 PRODUCT_COPY_FILES += \
-	device/oppo/find5/kickstart_checker.sh:system/etc/kickstart_checker.sh \
 	device/oppo/find5/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
 	device/oppo/find5/init.qcom.post_fs.sh:system/etc/init.qcom.post_fs.sh \
 	device/oppo/find5/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh \
