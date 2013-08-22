@@ -161,6 +161,10 @@ char * camera_fixup_setparams(int id, const char * settings)
         const char* isRecording = params.get("recording-hint");
         const char* videoSize = params.get("video-size");
 
+        // Disable ZSL mode when recording
+        if (strcmp(isRecording, "true") == 0)
+            params.set("camera-mode", "0");
+
         // In SD 480p quality, enable 60 fps recording.
         // XXX: Add this as a setting in Camera app
         // (off/60/90, only in 720x480)
