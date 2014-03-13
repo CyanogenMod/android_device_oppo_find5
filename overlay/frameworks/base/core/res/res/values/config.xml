@@ -77,8 +77,8 @@
         <item>108</item>  <!-- 800-1000 -->
         <item>144</item>  <!-- 1000-1600 -->
         <item>181</item>  <!-- 1600-3000 -->
-        <item>254</item>  <!-- 3000-10000 -->
-        <item>255</item>  <!-- 10000+ -->
+        <item>253</item>  <!-- 3000-10000 -->
+        <item>254</item>  <!-- 10000+ -->
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
@@ -106,7 +106,7 @@
 
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingMaximum">254</integer>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
