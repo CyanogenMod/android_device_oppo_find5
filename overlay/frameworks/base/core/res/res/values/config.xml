@@ -106,11 +106,11 @@
 
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingMaximum">254</integer>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">255</integer>
+    <integer name="config_screenBrightnessSettingDefault">254</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -119,5 +119,10 @@
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
+
+    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
+	 it causes the device to wake up.
+	 The default is false. -->
+    <bool name="config_lidControlsSleep">true</bool>
 
 </resources>
